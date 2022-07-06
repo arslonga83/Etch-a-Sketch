@@ -11,4 +11,4 @@ function createDivs (num) {
 }
 
 //call the function. eventually this will be paired with a prompt
-createDivs(16);
+createDivs(256);
