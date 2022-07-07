@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    background-color: gray;
 }
 
 .container {
@@ -11,4 +12,44 @@ body {
     height: 480px;
     margin: auto;
     border:1px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+}
+
+button {
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    font-size: 24px
+}
+
+h1 {
+    margin: 6px;
+}
+
+.main {
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 56px;
+    background-color: red;
+}
+
+.gridSquare {
+    background-color: white;
 }
