@@ -3,20 +3,24 @@ const container = document.querySelector('.container');
 
 //create the given number of divs
 function createDivs (num) {
-    for (i=1; i<=num; i++) {
+    for (i=1; i<=num*num; i++) {
         const newDiv = document.createElement('div');
         newDiv.classList.add('gridSquare');
+        let divSize = 480 / num;
+        newDiv.style.width = divSize + "px";
+        newDiv.style.height = divSize + "px";
         container.appendChild(newDiv);
     }
 }
 
-//call the function. eventually this will be paired with a prompt
-createDivs(256);
+//prompt for grid size
+createDivs(prompt('How many boxes wide do you want your square to be?'));
 
-//placeholder click listener for testing. need to switch this to hover effect
+//hover effect is here
 let divs = document.getElementsByClassName("gridSquare");
 
 for (let i=0; i<divs.length; i++) {
-    divs[i].addEventListener('click', () =>
-    divs[i].style.background = 'black')
+    divs[i].addEventListener('mouseover', () =>
+    divs[i].style.background = 'black') 
+    
 }

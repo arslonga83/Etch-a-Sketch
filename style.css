@@ -2,18 +2,13 @@ body {
     text-align: center;
 }
 
-/*initial code to make a square...needs work to make this flexible to different input numbers*/
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 480px;
+    height: 480px;
     margin: auto;
-    max-width: 512px;
-}
-
-.gridSquare {
-    height: 30px;
-    width: 30px;
-    border: 1px solid black;
+    border:1px solid black;
 }
