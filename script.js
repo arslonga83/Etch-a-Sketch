@@ -12,3 +12,11 @@ function createDivs (num) {
 
 //call the function. eventually this will be paired with a prompt
 createDivs(256);
+
+//placeholder click listener for testing. need to switch this to hover effect
+let divs = document.getElementsByClassName("gridSquare");
+
+for (let i=0; i<divs.length; i++) {
+    divs[i].addEventListener('click', () =>
+    divs[i].style.background = 'black')
+}

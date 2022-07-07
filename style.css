@@ -1,6 +1,5 @@
-
-div {
-    border: 1px solid black; /*border to help see the grid*/
+body {
+    text-align: center;
 }
 
 /*initial code to make a square...needs work to make this flexible to different input numbers*/
@@ -9,11 +8,12 @@ div {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    margin: auto;
+    max-width: 512px;
 }
 
 .gridSquare {
-    height: 8px;
-    width: 8px;
-
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
 }
